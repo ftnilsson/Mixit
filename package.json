@@ -1,0 +1,20 @@
+{
+  "name": "mixitup",
+  "version": "1.0.0",
+  "description": "mix your teams",
+  "main": "index.html",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "mix your teams"
+  ],
+  "author": "Fredrik Nilsson",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "jasmine": "^3.2.0"
+  }
+}

@@ -1,0 +1,13 @@
+# robotstxt.org/
+
+User-agent: Googlebot
+Disallow:
+
+User-agent: Slurp
+Disallow:
+
+User-agent: bingbot
+Disallow:
+
+User-agent: *
+Disallow: /

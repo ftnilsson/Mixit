@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="mix People into teams">
+  <meta name="author" content="Fredrik Nilsson">
+  <title>MixItUp</title>
+
+  <link href="public/img/favicon.png" rel="icon">
+  <link href="public/img/favicon.png" rel="apple-touch-icon">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/site.css">
+</head>
+
+<body>  
+  <section id="main-section">
+    <div class="form">
+      <div class="tab-content">         
+        <div id="signup">
+          <h1>Let's create some teams</h1>
+          <form action="javascript:mix();">
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  Team names
+                </label>
+                <select id="teamName">
+                  <option value="0">None</option>
+                  <option value="1">Star wars</option>
+                  <option value="2">Programming languages</option>                 
+                  <option value="3">Tech Giants</option>
+                  <option value="4">Silicon Valley</option>
+                  <option value="5">Colors</option>
+                  <option value="6">Bond, James Bond</option>
+                </select>
+              </div>
+
+              <div class="field-wrap">
+                <label>
+                  Number of teams<span class="req">*</span>
+                </label>
+                <input type="number" value="4" id="numberOfGroups" name="numberOfGroups" min="2" max="12" required />
+              </div>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Partisipants<span class="req">*</span>
+              </label>
+              <textarea id="peopleToMix" required >
+Billy-Bob
+Merle
+Crystal
+Tommy-Lee
+Bubba</textarea> 
+            </div>
+            <button type="submit" class="button button-block">Mix it up!</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div> <!-- /form -->
+  </section>
+  <section>
+    <div id="results">
+      <h1>Teams</h1>    
+      <div id="result">
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+  <script type="text/javascript" src="public/js/MixItUp.js"></script>
+  <script type="text/javascript" src="public/js/TableGenerator.js"></script>
+  <script type="text/javascript" src="public/js/main.js"></script>
+  
+</body>
+
+</html>
